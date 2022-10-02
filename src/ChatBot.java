@@ -44,4 +44,16 @@ public class ChatBot {
     public String goodbye() {
         return "It was nice talking with you! Have a great day! Sincerely, " + name;
     }
+
+    public void age(int age){
+        System.out.println("I am " + age + " years old!");
+    }
+
+    public String old(int userAge, int chatBoxAge){
+        if (userAge > chatBoxAge) {
+            return "You're " + (userAge - chatBoxAge) + " years older than me!";
+        }else{
+            return "You're " + (chatBoxAge - userAge) + " years younger than me";
+        }
+    }
 }
